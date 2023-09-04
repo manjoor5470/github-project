@@ -1,0 +1,148 @@
+1. What is Git ?
+   
+   Git is a distributed version control system (DVCS) widely used for managing and tracking changes to files in software development projects.
+   It is generally used for source code management in software development.
+
+   It is most suitable when there are multiple people working on projects as a team and is used for tracking the project changes and 
+   efficiently supports the collaboration of the development process.
+
+   a. Git is used to tracking changes in the source code.
+   b. It allows multiple developers to work together.
+   3. It supports non-linear development through its thousands of parallel branches
+
+   Some key features and concepts of Git include:
+    1.Repository
+    2.Commit
+    3.Branch
+    4.Merge
+    5.Remote
+    6.Pull and Push
+
+   Features of Git:
+        Tracks history
+        Free and open source
+        Supports non-linear development
+        Creates backups
+        Scalable
+        Supports collaboration
+        Branching is easier
+        Distributed development
+
+2. Different Commands in Git ?
+   
+    Git config
+    Git init
+    Git add
+    Git diff
+    Git commit
+    Git reset
+    Git status
+    Git merge
+    Git push
+    Git pull
+
+3. What is GitHub ?
+
+4. What is version control system (VCS)?
+
+    In Git, a version control system (VCS) is a software tool that helps manage and track changes to files and directories in a project. Git is 
+    a distributed version control system (DVCS), which means that every developer working on a project has their own local copy of the entire repository, 
+    including its complete history.
+
+    The version control system, in this case, Git, provides several benefits, including:
+
+    Tracking Changes
+    Collaboration
+    Branching and Merging
+    History and Rollbacks
+    Conflict Resolution
+    Remote Repositories
+
+    By using a version control system like Git, developers can maintain a complete history of a project, easily collaborate with others, track 
+    changes, and efficiently manage the development process. It provides a structured and organized approach to software development, ensuring 
+    that changes are tracked, conflicts are resolved, and the project's history is well-documented. 
+
+5. What does git clone do?
+
+    The clone command creates a copy (or clone) of an existing git repository. Generally, it is used to get a copy of the remote repository to 
+    the local repository.
+
+6. What does the command git config do?
+
+    Git uses your username to associate commits with an identity. The git config command can be used to change your Git configuration, including your username.
+        
+        Suppose you want to give a username and email id to associate a commit with an identity so that you can know who has made a particular commit. For that I will use:
+
+        git config –global user.name “Your Name”: This command will add a username.
+        git config –global user.email “Your E-mail Address”: This command will add an email id. 
+
+7. What is the difference between Git and SVN?
+
+                                        Git	                                                                        SVN
+                    Git is a Decentralized Version Control tool                                 SVN is a  Centralized Version Control tool
+
+                    Git stores content in the form of metadata.                                 SVN stored data in the form of files.
+
+                    Clients can clone entire repositories on their local systems                Version history is stored on a server-side repository
+
+                    Commits are possible even if offline                                        Only online commits are allowed
+                    
+                    Push/pull operations are faster                                             Push/pull operations are slower
+
+                    Works are shared automatically by commit                                    Nothing is shared automatically
+
+8. What is a commit message?
+
+    The command that is used to write a commit message is “git commit -m 'Your commit message' ”.
+
+9. How can you fix a broken commit?
+
+    In order to fix any broken commit, use the command “git commit --amend”. When you run this command, you can fix the broken commit message in the editor.
+
+10. How can you create a repository in Git?
+
+    To create a repository, create a directory for the project if it does not exist, then run the command “git init”. By running this command .git directory will be 
+    created in the project directory.
+
+11. Name a few Git commands and explain their usage.
+
+
+
+12. What is Git Bash?
+
+    Git Bash is an application that installs Bash, Git, and a few Bash utilities that are commonly used on a Windows OS.
+
+10. What is the meaning of “Index” or “Staging Area” in GIT?
+
+
+11. What is Repository ?
+
+   In Git, a repository is a central location where a project's version-controlled files and their complete history are stored. It serves as 
+   a storage space for the project's source code, as well as any other files and directories related to the project.
+   A repository in Git can exist either locally on your computer or remotely on a server.
+   
+   Local repositories are typically used for individual development, allowing you to track changes, commit revisions, and maintain a complete 
+   history of your project on your own machine. 
+   
+   Remote repositories, on the other hand, enable collaboration and allow multiple developers to work on the same project. They provide a centralized 
+   location where developers can push their changes and pull the changes made by others.
+
+   To create a new repository in Git, you can use the 'git init' command in the directory where you want to start version controlling your project. 
+
+12. What is different bw git fetch and git pull?
+
+13. What is git base and git merged?
+
+14. What is ccherry pick in Git?
+
+15. How to create branch and delete the branch?
+
+16. How to resolve the merge Conflict in git?
+
+17. It is possible to push the code one local repo to another local repo?
+
+18. What is stash
+
+19. Diff b/w Git revert and Git reset?
+
+20. 

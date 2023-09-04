@@ -1,0 +1,110 @@
+# git init 
+  -> The git init command is used to initialize a new Git repository in a directory. When you run this command, Git creates a new repository with all the necessary 
+  subdirectories and files that it needs to track changes to your project's source code.
+  in terminal run in particular folder/project - git init
+
+# git status
+  git config --list
+  git add filename
+  git add .
+  git rm --cached "file-name"
+  git commit -m "message name"
+  git show "commit-id"
+  git restore "filename"
+  git log
+  git log --oneline
+  git log --oneline --pretty
+  git rm --cached
+  git clear
+  git branch
+  git branch "branch-name"
+  git checkout -b "branch-name"  // we create clone branch of existing branch.
+  git clone "git-url"
+  git pull origin "branch-name"
+  git fetch
+  git push origin "branch-name"
+
+# git config --global user.name "manjoor5470"
+  git config --global user.email "manjoor5470@gmail.com"
+
+# git remote -v
+  git remote set-url origin
+  git remote set-url --add [name] [new-url]
+  git remote set-url --delete [name] [old-url]
+  git remote -v  
+  git remote --set-url
+
+
+-> development 
+    -> Feature Branch 1
+    -> Feature Branch 2
+    -> Feature Branch 3
+-
+-
+-
+-----------------
+                -
+                -
+
+Stagging                 Production/master 
+    
+              Hotfix
+
+
+
+
+# git revert sceanario
+  git revert "commit id"
+  git reset            -> delete commit id in history
+
+  - the git reset command is used to move the HEAD (the currently checked-out commit) and optionally the branch pointer to a different commit. 
+  1. Soft Reset (--soft)
+      git reset --soft <commit>
+      explanation -> This type of reset moves the HEAD and branch pointer to a different commit but leaves your changes in the staging area. It's useful when you want 
+                     to uncommit your changes but keep them staged so that you can make additional changes before committing again.
+
+  2. Mixed Reset (default)
+      git reset <commit> or git reset --mixed <commit>
+      explanation -> This is the default type of reset if you don't specify --soft, --mixed, or --hard. It moves the HEAD and branch pointer to a different commit 
+                     and also unstages your changes. Your changes are retained in your working directory as uncommitted modifications. This is a common choice when 
+                     you want to uncommit and start fresh with your changes.
+
+  3. Hard Reset (--hard)
+      git reset --hard <commit>
+      explanation -> This type of reset is the most aggressive. It moves the HEAD and branch pointer to a different commit, discards all changes in your staging area 
+                     and working directory, and sets your working directory to match the specified commit. Be cautious when using --hard as it can lead to data loss 
+                     since it discards changes.
+
+# gitIgnore
+   A .gitignore file is used in a Git repository to specify patterns of files and directories that should be ignored by Git.
+   git add .gitignore
+   git commit -m "Add .gitignore file"
+
+# Git merge "branch-name"
+
+# git cherrypick "commit-id"
+# git stash - git stash pop
+
+  -> git pull origin dev
+     git pull origin dev --ff
+
+
+# How to work and used on github in industry
+
+  first run this command to set permision for other user to access my github repository like - push,pull
+   ssh-keygen -t rsa
+   cat /root/.ssh/id_rsa.pub // public key for ssh and copy this key and paste into github repository. icon->setting->ssh/gps->add key and paste it.
+   ssh -T git@github.com // testing the ssh
+   
+  - cd /opt  //go /opt folder
+  - mkdir repo   // create repo name folder
+  - cd repo      // go to repo folder
+  - git init     // run git init command in this folder
+  - git config --global user.name "manjoor5470"
+    git config --global user.eamil "manjoor5470@gmail.com"
+    git init // again run this command may be some environment variable not set
+  - git remote add origin "git-url"
+  - git clone "git-url"
+    ls -ltr
+
+

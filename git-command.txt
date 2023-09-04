@@ -108,3 +108,7 @@ Stagging                 Production/master
     ls -ltr
 
 
+# how to delete the branch and update in github repository
+  - git branch -D dev
+    git push origin --delete branch_name
+
